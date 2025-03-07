@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+import ecomercepage from './ecomerce.png';
+import focusedu from './focuseduu.png';
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -48,7 +50,13 @@ const Projects = () => {
             >
               <div className="relative aspect-video">
                 <img
-                  src={project.image || `https://images.unsplash.com/photo-${index === 0 ? '1557821552-17105176677c' : '1507925921958-8a62f3d1a50d'}?auto=format&fit=crop&w=800&q=80`}
+                  src={
+                    index === 0
+                      ? ecomercepage
+                      : index === 1
+                      ? focusedu
+                      : `https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80`
+                  }
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
@@ -72,24 +80,50 @@ const Projects = () => {
 </div>
 
                 <div className="flex gap-4">
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    <span>{t('projects.viewLive')}</span>
-                  </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>{t('projects.viewCode')}</span>
-                  </a>
+                  {index === 0 && (
+                    <>
+                      <a
+                        href="https://github.com/WarneyRego/E-commercepage"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                      >
+                        <Github className="w-4 h-4" />
+                        <span>{t('projects.viewCode')}</span>
+                      </a>
+                      <a
+                        href="https://e-commercepage-dun.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span>{t('projects.viewLive')}</span>
+                      </a>
+                    </>
+                  )}
+                  {index === 1 && (
+                    <>
+                      <a
+                        href="https://github.com/WarneyRego/FocusEdu"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                      >
+                        <Github className="w-4 h-4" />
+                        <span>{t('projects.viewCode')}</span>
+                      </a>
+                      <a
+                        href="https://focus-edu.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span>{t('projects.viewLive')}</span>
+                      </a>
+                    </>
+                  )}
                 </div>
               </div>
             </motion.div>

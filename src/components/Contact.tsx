@@ -34,7 +34,7 @@ const Contact = () => {
     });
   };
 
-  const inputClasses = "w-full px-4 py-3 rounded-xl border bg-white/5 backdrop-blur-sm border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-800/50 dark:text-white transition-all duration-200";
+  const inputClasses = "w-full px-4 py-3 outline-none rounded-xl border bg-white/5 backdrop-blur-sm border-gray-200 dark:border-gray-700 focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-800/50 dark:text-white transition-all duration-200";
 
   return (
     <section className="py-20 relative overflow-hidden">
@@ -80,6 +80,7 @@ const Contact = () => {
                 {t('contact.name')}
               </label>
               <input
+              
                 type="text"
                 name="name"
                 value={formData.name}

@@ -58,7 +58,7 @@ const TechStack = () => {
       key: 'figma',
       color: 'from-purple-400 to-purple-600',
     },
-     {
+    {
       icon: <Package className="w-8 h-8" />,
       key: 'docker',
       color: 'from-blue-400 to-blue-300',
@@ -67,7 +67,7 @@ const TechStack = () => {
       icon: <Cloud className="w-8 h-8" />,
       key: 'aws',
       color: 'from-orange-600 to-orange-300',
-    },
+    }
   ];
 
   const containerVariants = {

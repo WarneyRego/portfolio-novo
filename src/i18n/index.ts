@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      greeting: "Hi, Warney Rego",
+      greeting: "Hi, i am Warney Rego",
       role: {
         webDev: 'Web Developer',
         uiDesigner: 'UI/UX Designer',
@@ -39,7 +39,7 @@ const resources = {
           },
           {
             "year": "2024",
-            "title": "Development of an Article and Prototype for AMA (Friends of Autistics) Management System",
+            "title": "Development of an Article and Prototype for AMA  Management System",
             "company": "AMA",
             "description": "In the Extension Project course, I developed a prototype of a management system for AMA (Friends of Autistics), starting with the creation of a detailed flowchart to map processes. The screens were designed in Figma, ensuring an intuitive design. The implementation was done with React for the frontend and Firebase for authentication and real-time database."
           },
@@ -105,11 +105,13 @@ const resources = {
         projects: [
           {
             title: 'E-commerce Platform',
-            description: 'A modern e-commerce platform built with Next.js and Tailwind CSS.',
+            description: 'A modern e-commerce platform built with React and Tailwind CSS.',
+            tech:['TypeScript','Tailwind','React',],
           },
           {
-            title: 'Task Management App',
-            description: 'A collaborative task management application with real-time updates.',
+            title: 'Focus Edu',
+            description: 'FocusEdu is an AI-powered study plan generator that organizes learning based on the users needs, available time, and goals',
+            tech:['Supabase','Tailwind','React','TypeScript',],
           },
         ],
       },
@@ -226,13 +228,14 @@ const resources = {
         projects: [
           {
             title: 'Plataforma E-commerce',
-            description: 'Uma plataforma moderna de e-commerce construída com Next.js e Tailwind CSS.',
-            tech:['TypeScript','Tailwind'],
+            description: 'Uma plataforma moderna de e-commerce construída com React e Tailwind CSS.',
+            tech:['TypeScript','Tailwind','React',],
                
           },
           {
-            title: 'App de Gestão de Tarefas',
-            description: 'Uma aplicação colaborativa de gestão de tarefas com atualizações em tempo real.',
+            title: 'Focus Edu',
+            description: 'O FocusEdu é um gerador de planos de estudo personalizados com IA, que organiza o aprendizado com base nas necessidades, tempo disponível e objetivos do usuário.',
+            tech:['Supabase','Tailwind','React','TypeScript',],
           },
         ],
       },
