@@ -10,6 +10,7 @@ const ParticlesBackground = () => {
 
   return (
     <Particles
+    
       id="tsparticles"
       init={particlesInit}
       options={{
@@ -17,6 +18,10 @@ const ParticlesBackground = () => {
           color: {
             value: 'transparent',
           },
+        },
+        fullScreen: {
+          enable: false,
+          zIndex: -1
         },
         fpsLimit: 120,
         interactivity: {
@@ -33,7 +38,8 @@ const ParticlesBackground = () => {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 10,
+              limit: 10
             },
             repulse: {
               distance: 120,
@@ -44,7 +50,6 @@ const ParticlesBackground = () => {
         particles: {
           color: {
             value: '3',
-            
           },
           links: {
             color: '#8A2BE2',
@@ -52,12 +57,20 @@ const ParticlesBackground = () => {
             enable: true,
             opacity: 0.5,
             width: 1,
+            triangles: {
+              enable: false
+            }
           },
           move: {
+            bounce: false,
             direction: 'none',
             enable: true,
             outModes: {
               default: 'bounce',
+              bottom: 'bounce',
+              left: 'bounce',
+              right: 'bounce',
+              top: 'bounce'
             },
             random: false,
             speed: 2,
@@ -68,7 +81,8 @@ const ParticlesBackground = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            limit: 300,
+            value: 60,
           },
           opacity: {
             value: 0.5,
@@ -77,9 +91,10 @@ const ParticlesBackground = () => {
             type: 'circle',
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 0, max: 0 },
           },
         },
+   
         detectRetina: true,
       }}
       className="absolute inset-0"

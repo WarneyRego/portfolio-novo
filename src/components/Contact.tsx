@@ -62,7 +62,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
           >
-            Let's work together on something great
+            {t('contact.subtitle')}
           </motion.p>
         </div>
 

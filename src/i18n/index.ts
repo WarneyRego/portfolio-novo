@@ -54,7 +54,7 @@ const resources = {
       },
       techStack: {
         title: 'Technologies',
-        subtitle: 'Technologies and tools I use to bring ideas to life',
+        subtitle: 'Technologies and tools I use ',
         technologies: {
           htmlCss: {
             name: 'HTML/CSS',
@@ -116,6 +116,8 @@ const resources = {
         ],
       },
       contact: {
+        cta: 'Contact',
+        CV: 'Download CV',
         title: 'Contact',
         subtitle: "Let's work together on something great",
         name: 'Name',
@@ -135,7 +137,7 @@ const resources = {
       },
       timeline: {
         title: 'Experiência',
-        subtitle: 'Minha jornada profissional e experiência',
+        subtitle: 'Minha jornada profissional',
         experiences: [
           {
             year: '2021',
@@ -178,7 +180,7 @@ const resources = {
       },
       techStack: {
         title: 'Tecnologias',
-        subtitle: 'Tecnologias e ferramentas que uso para dar vida às ideias',
+        subtitle: 'Tecnologias e ferramentas que uso',
         technologies: {
           htmlCss: {
             name: 'HTML/CSS',
@@ -240,6 +242,8 @@ const resources = {
         ],
       },
       contact: {
+        cta: 'Contato',
+        CV: 'Baixar CV',
         title: 'Contato',
         subtitle: 'Vamos trabalhar juntos em algo incrível',
         name: 'Nome',
